@@ -1,0 +1,157 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #c7f500;
+  /* Lime green */
+}
+
+h1,
+h2,
+h3 {
+  color: #c7f500;
+  text-align: center;
+}
+
+button {
+  background-color: #c7f500;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #a4d400;
+}
+
+/* Show List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #111;
+  border: 1px solid #333;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+li img {
+  width: 80px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+li h3 {
+  color: #c7f500;
+}
+
+li p {
+  color: #aaa;
+}
+
+/* Audio Player */
+audio {
+  width: 100%;
+  margin-top: 15px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #111;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-volume-slider {
+  color: #c7f500;
+}
+
+/* Favourites Section */
+.favourites {
+  background-color: #111;
+  color: #c7f500;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.favourites select {
+  background-color: #333;
+  color: #c7f500;
+  border: none;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  text-align: center;
+  padding: 20px;
+  color: #c7f500;
+}
+
+/* Episode Item Styles */
+.episode-item {
+  background-color: #222;
+  border: 1px solid #333;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  color: #c7f500;
+}
+
+.episode-info h4 {
+  margin-bottom: 5px;
+}
+
+.episode-info p {
+  color: #aaa;
+}
+
+.episode-info button {
+  background-color: #c7f500;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.episode-info button:hover {
+  background-color: #a4d400;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the modal is above other content */
+  animation: fadeIn 0.3s; /* Optional: Add fade-in animation */
+}
+

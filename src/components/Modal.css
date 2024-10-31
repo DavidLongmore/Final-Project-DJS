@@ -1,0 +1,43 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure the modal is above other content */
+    overflow: hidden;
+    /* Prevent scrolling on the modal background */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    max-width: 90%;
+    /* Adjusted maximum width */
+    max-height: 80%;
+    /* Set maximum height to limit size */
+    overflow-y: auto;
+    /* Allow vertical scrolling for content */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    /* Larger close icon */
+    cursor: pointer;
+    color: #333;
+    /* Close icon color */
+}
